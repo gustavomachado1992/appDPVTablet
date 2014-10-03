@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{01CD2A55-B3CC-448D-AA98-45D6C6CDF685}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AppFinal</RootNamespace>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AssemblyName>AppFinal</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TelaLogin.cs" />
+    <Compile Include="TelaIndex.cs" />
+    <Compile Include="TelaCfg.cs" />
+    <Compile Include="ClassProduto.cs" />
+    <Compile Include="Firs.cs" />
+    <Compile Include="adapterProduto.cs" />
+    <Compile Include="ObjetoProduto.cs" />
+    <Compile Include="classes\ClassVendas.cs" />
+    <Compile Include="classes\ClassVendaItem.cs" />
+    <Compile Include="classes\ClasseLoja.cs" />
+    <Compile Include="classes\ClassUsuario.cs" />
+    <Compile Include="ObjetoLoja.cs" />
+    <Compile Include="ObjetoUsuario.cs" />
+    <Compile Include="ObjetoVendaItem.cs" />
+    <Compile Include="ObjetoVendas.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\drawable\bordaCabecalho.xml" />
+    <AndroidResource Include="Resources\drawable\bordaPretaTexto.xml" />
+    <AndroidResource Include="Resources\drawable\brasystem.png" />
+    <AndroidResource Include="Resources\drawable\brasystemcortransp.png" />
+    <AndroidResource Include="Resources\drawable\buttonStyle1.xml" />
+    <AndroidResource Include="Resources\drawable\buttonStyle2.xml" />
+    <AndroidResource Include="Resources\drawable\buttonstyle3.xml" />
+    <AndroidResource Include="Resources\drawable\cabecalho.xml" />
+    <AndroidResource Include="Resources\drawable\icactionsettings.png" />
+    <AndroidResource Include="Resources\drawable\standardNewButton.xml" />
+    <AndroidResource Include="Resources\drawable\styleEstruturaIndex.xml" />
+    <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\values-sw600dp\dimens.xml" />
+    <AndroidResource Include="Resources\layout-land\listaRowProduto.axml" />
+    <AndroidResource Include="Resources\layout-land\Main.axml" />
+    <AndroidResource Include="Resources\layout-land\telaCfg.axml" />
+    <AndroidResource Include="Resources\layout-land\telaIndex.axml" />
+    <AndroidResource Include="Resources\layout-land\telaLogin.axml" />
+    <AndroidResource Include="Resources\layout-land\telaTeste.axml" />
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\layout-land\Firs.axml" />
+    <AndroidResource Include="Resources\drawable\brasystemcanto.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\App\App.csproj">
+      <Project>{86DDEEF6-50D7-4E2C-926B-F9600AB6021B}</Project>
+      <Name>App</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\layout-sw600dp\" />
+    <Folder Include="Resources\layout-sw800dp\" />
+    <Folder Include="Resources\layout-sw600dp-land\" />
+    <Folder Include="Resources\layout-sw800dp-land\" />
+    <Folder Include="Resources\values-sw600dp\" />
+    <Folder Include="Resources\layout-land\" />
+    <Folder Include="Resources\layout\" />
+    <Folder Include="classes\" />
+  </ItemGroup>
+</Project>

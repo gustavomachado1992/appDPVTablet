@@ -1,0 +1,15 @@
+﻿<metadata>
+	<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+  <attr path="/api/package[@name='br.com.daruma.framework.mobile.gne']/class[@name='Utils']" name="visibility">public</attr>
+  <attr path="/api/package[@name='br.com.daruma.framework.mobile.gne']/class[@name='OperacoesXMlRetorno']" name="visibility">public</attr>
+  <remove-node path="/api/package[@name='br.com.daruma.framework.mobile.gne']" />
+  <remove-node path="/api/package[@name='br.com.daruma.framework.mobile.log']" />
+  <remove-node path="/api/package[@name='br.com.daruma.framework.mobile.camera.dependencies']/class[@name='DecodeAsyncTask']" />
+</metadata>

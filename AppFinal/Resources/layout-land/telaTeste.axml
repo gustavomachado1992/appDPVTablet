@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="#ffffffff">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/linearLayout1"
+        android:gravity="center_horizontal"
+        android:background="#84d0d0d0">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/linearLayout1"
+            android:gravity="center_horizontal"
+            android:layout_weight="25" />
+        <TextView
+            android:text="@string/firstTexto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView1"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="4.5dp"
+            android:layout_weight="20"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#db000000" />
+        <Button
+            android:text="@string/firstButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/button1"
+            android:textSize="26dp"
+            android:background="@drawable/standardNewButton"
+            android:textColor="#ff000000"
+            android:layout_weight="25" />
+    </LinearLayout>
+<!-- Property Change Conflict | source:xlarge, id:@+id/imageView2 | src=@drawable/logocartadevinhos2 -->
+<!-- Property Change Conflict | source:xlarge, id:@+id/textView1 | text=@string/firstText -->
+</LinearLayout>

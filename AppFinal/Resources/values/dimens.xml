@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+
+<resources>
+	
+	<dimen name="container_logoBottom">0dp</dimen>
+
+	<dimen name="containe_height_cabecalho">20dp</dimen>
+
+	<dimen name="container_imagem">10dp</dimen>
+
+	 <!--  CFG   -->
+	<dimen name="container_CfgmarginTop">5dp</dimen>
+	<dimen name="container_CfgmarginRight">5dp</dimen>
+	<dimen name="container_CfgmarginBottom">5dp</dimen>
+   <dimen name="container_CfgmarginLeft">5dp</dimen>
+     <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>
+
+
